@@ -1,0 +1,110 @@
+body, html {
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    max-height: 100vh;
+    max-width: 38%;
+    min-width: 38%;
+    position: relative;
+    overflow: hidden;
+    background-color: #af6639;
+}
+
+.imageOverlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0 , 0, 0.5);
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+    top: 10%;
+    left: 25%;
+}
+
+.logoText {
+    left: 50%;
+    font-size: 7vh;
+    background: -webkit-linear-gradient(#eee, #ff7300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Parchment";
+    white-space: nowrap; 
+}
+
+.backgroundImg {
+    height: 100%;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    max-height: 100vh;
+    width: 62%;
+}
+
+.top {
+    align-items: flex-end;
+    height: 33%;
+    background-color: #f4f4f4;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.middle {
+    align-items: center;
+    height: 34%;
+    background-color: #fefefe;
+    padding-left: 40px;
+}
+
+.bottom {
+    align-items: flex-start;
+    height: 33%;
+    background-color: #f4f4f4;
+    padding-top: 40px;
+}
+
+.top,
+.middle,
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+}
+
+@font-face {
+    font-family: "Parchment";
+    src: url(./ParchmentMf-Vqge.ttf) format("TrueType");
+}
