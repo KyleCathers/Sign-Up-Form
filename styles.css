@@ -106,16 +106,21 @@ body {
 
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 20px;
 }
 
-.leftFormSide,
-.rightFormSide,
 .inputPair,
 .topTextbox {
     display: flex;
     flex-direction: column;
+}
+
+.topRowForm,
+.middleRowForm,
+.bottomRowForm {
+    display: flex;
+    flex-direction: row;
 }
 
 .inputPair {
@@ -199,7 +204,9 @@ span {
         height: 30%;
     }
 
-    form {
+    .topRowForm,
+    .middleRowForm,
+    .bottomRowForm {
         flex-direction: column;
     }
 
@@ -275,7 +282,15 @@ span {
         margin-right: 0px;
     }
 
-    .topTextbox {
+    .topTextbox,
+    .bottomTextbox,
+    .alreadyAccount {
         margin-left: 0px;
+    }
+
+    .bottomTextbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
