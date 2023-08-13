@@ -37,8 +37,6 @@ body {
 .logo {
     height: 80%;
     width: auto;
-    top: 10%;
-    left: 25%;
 }
 
 .logoText {
@@ -221,6 +219,7 @@ span {
         max-width: 100%;
         width: 100%;
         overflow: visible;
+        min-width: 100%;
     }
 
     .rightSide {
@@ -240,6 +239,7 @@ span {
     .middle {
         min-height: 550px;
         align-items: center;
+        padding-left: 0px;
     }
 
     .bottom {
@@ -269,5 +269,13 @@ span {
     input {
         width: 60vw;
         height: 35px;
+    }
+
+    .inputPair {
+        margin-right: 0px;
+    }
+
+    .topTextbox {
+        margin-left: 0px;
     }
 }
